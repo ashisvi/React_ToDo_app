@@ -1,0 +1,157 @@
+:root {
+  --primary-color: lightblue;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+#root {
+  flex-grow: 1;
+  min-height: 100vh;
+  width: 100%;
+}
+
+header {
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+}
+
+.inputForm {
+  width: calc(100% - 50px);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.inputForm input[type="text"] {
+  flex-grow: 1;
+  height: 48px;
+  padding: 0.25rem;
+  font-size: 1rem;
+  border: 2px solid var(--primary-color);
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-right: none;
+}
+
+.inputForm button {
+  padding: 10px 30px;
+  border-radius: 0;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.submitButton {
+  height: 48px;
+  min-width: 48px;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+button {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+}
+
+input,
+button {
+  outline: none;
+}
+
+.itemList {
+  margin-top: 1.5rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: var(--primary-color);
+  margin: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.item label {
+  min-width: 30%;
+}
+
+.item input[type="checkbox"] {
+  height: 36px;
+  width: 36px;
+  background: green;
+}
+
+.item button {
+  background-color: red;
+}
+
+.btnGroup {
+  margin: 1rem;
+  text-align: center;
+}
+
+.btnGroup button {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 0;
+  width: 100px;
+  outline: none;
+}
+
+.btnGroup button:nth-child(2) {
+  border-right: 0;
+  border-left: 0;
+}
+
+.btnGroup button:first-child {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.btnGroup button:last-child {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.btnGroup .activeBtn {
+  color: #fff;
+  background-color: var(--primary-color);
+}
